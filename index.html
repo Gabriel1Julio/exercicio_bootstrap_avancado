@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calistoga&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LOJA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Ínicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Seções
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#carousel">Últimas Notícias</a></li>
+                                <li><a class="dropdown-item" href="#cards">Jogos em Destaque</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="carousel">
+        <h2>Últimas Notícias</h2>
+        <div id="carousel-noticias" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="img/game-pass.jpg">
+                    <div class="carousel-caption">
+                        <h3>Novos jogos dezembro 2023 Game Pass</h3>
+                    </div>
+                </div>
+
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="img/Yakuza-8.png">
+                    <div class="carousel-caption">
+                        <h3>Lançamentos de jogos janeiro de 2024</h3>
+                    </div>
+                </div>
+
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="img/dragosn-dogma.jpg">
+                    <div class="carousel-caption">
+                        <h3>Gameplay de 18 min Dragons Dogma 2</h3>
+                    </div>
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-noticias" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button data-bs-target="#carousel-noticias" data-bs-slide="next" type="button" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="carousel-noticias" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="carousel-noticias" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="carousel-noticias" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cards" class="container">
+        <h2>Jogos em Destaque</h2>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="img/mhw.jfif">
+                    <div class="card-body">
+                        <div class="title">Monster Hunter World</div>
+                        <p>
+                            Monster Hunter: World é um jogo de RPG eletrônico de ação desenvolvido e publicado pela Capcom. O jogo faz parte da série Monster Hunter, foi lançado mundialmente 
+                            em 26/01/2018 para PlayStation.
+                        </p>
+                        <p>R$ 100,00</p>
+                        <button class="btn btn-success">+ Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="img/nier.jfif">
+                    <div class="card-body">
+                        <div class="title">Nier Automata</div>
+                        <p>
+                            Nier: Automata é um jogo eletrônico de RPG de ação desenvolvido pela PlatinumGames. Foi lançado em fevereiro de 2017 no Japão e 
+                            mundialmente no mês seguinte para PlayStation.
+                        </p>
+                        <p>R$ 80,00</p>
+                        <button class="btn btn-success">+ Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="img/gow.jpg">
+                    <div class="card-body">
+                        <div class="title">God of War: Ragnarok</div>
+                        <p>
+                            God of War Ragnarök é um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony Interactive Entertainment. 
+                            Foi lançado em 9 de novembro de 2022 para PlayStation.
+                        </p>
+                        <p>R$ 250,00</p>
+                        <button class="btn btn-success">+ Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
